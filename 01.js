@@ -10,7 +10,14 @@ function soloNumeros(array) {
   // Ej: 
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
-  // Tu código aca:
+  arrayNum =[];
+
+  for (let i = 0; i < array.length; i++) {
+      if (!isNaN(array[i])) {
+      arrayNum.push(array[i]);  
+    }
+  }
+  return arrayNum;
 
 }
 
